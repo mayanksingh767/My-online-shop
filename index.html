@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Online Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🛒 My Online Shop</h1>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#products">Products</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+
+        </nav><a href="#" id="cart">🛒 Cart (0)</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+    </header>
+    <div class="search-box">
+        <input type="text" id="searchInput"
+        placeholder="Search Products...">
+        <button
+        onclick="searchProduct()">Search</button>
+    </div>
+
+    <section class="banner">
+        <h2>Big Sale 50% OFF</h2>
+        <p>Shop the latest products at amazing prices.</p>
+        <button>Shop Now</button>
+    </section>
+
+    <section>
+        <h2>Welcome!</h2>
+        <p>Best products at best prices.</p>
+
+        <button>Shop Now</button>
+    </section>
+    <section class="products"id="products">
+
+    <div class="product" id="shoes">
+        <a href="product.html">
+            <img src="shoes.png"
+            alt="Sports Shoes">
+        </a>
+        
+                <h3>Sports Shoes</h3>
+        <p><del>₹1499</del> <b style="color:red;">₹749</b></p>
+        <p>₹749</p><p>⭐⭐⭐⭐☆ (4.5)</p>
+
+
+        <button>Add to Cart</button>
+        <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="product" id="watch">
+        <a href="watch.html">
+        <img src="lilo401-watch-6853385_1920.jpg"
+        alt="Smart Watch">
+        </a>
+        
+        
+        <h3>Smart Watch</h3>
+        <p><del>₹1299</del> <b style="color:red;">₹649</b></p>
+
+        <p>₹649</p><p>⭐⭐⭐⭐☆ (4.5)</p>
+
+        <button>Add to Cart</button>
+        <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="product" id="tshirt">
+        <a href="t-shirt.html">
+        <img src="popmelon-tshirt-8726716.jpg" alt="t-Shirt">
+        </a>
+        <h3>T-Shirt</h3>
+        <p><del>₹999</del> <b style="color:red;">₹499</b></p>
+        <p>₹499</p><p>⭐⭐⭐⭐☆ (4.5)</p>
+
+        <button>Add to Cart</button>
+        <button class="buy-btn">Buy Now</button>
+    </div>
+
+</section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
