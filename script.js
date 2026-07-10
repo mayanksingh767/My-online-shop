@@ -14,12 +14,23 @@ function searchProduct() {
     let search = document.getElementById("searchInput").value.toLowerCase();
 
     if (search === "shoes") {
-        document.getElementById("shoes").scrollIntoView({ behavior: "smooth" });
+        document.getElementById("shoes").scrollIntoView({ behavior: "smooth", block: "center" });
+        document.getElementById("shoes").classList.add("highlight");
+
     } else if (search === "watch") {
-        document.getElementById("watch").scrollIntoView({ behavior: "smooth" });
+        document.getElementById("watch").scrollIntoView({ behavior: "smooth", block: "center" });
+        document.getElementById("watch").classList.add("highlight");
+
     } else if (search === "tshirt") {
-        document.getElementById("tshirt").scrollIntoView({ behavior: "smooth" });
-    } else {
+        document.getElementById("tshirt").scrollIntoView({ behavior: "smooth", block: "center" });
+        document.getElementById("tshirt").classList.add("highlight");
+
+    } else if (search === "tshirt") {
+
+        document.getElementById("goggles").scrollIntoView({ behavior: "smooth", block: "center" });
+        document.getElementById("goggles").classList.add("highlight");
+    } else{
+
         alert("Product not found!");
     }
 }

@@ -92,8 +92,9 @@ nav a:hover{
     cursor:pointer;
 }
 .product button{
-    width:100;
-    margin-top:10px;
+    background-color: #28a745;
+    color: white;
+     margin-top: 10px;
 }
 
 .search-box button:hover{
@@ -149,7 +150,9 @@ nav a:hover{
 }
 
 .login-box button{
-    width:95%;
+    width:100%;
+    display: block;
+    margin: 10px 0;
     padding:10px;
     background:blue;
     color:white;
@@ -160,4 +163,8 @@ nav a:hover{
 
 .login-box button:hover{
     background:darkblue;
+}
+.highlight {
+    border: 3px solid black;
+    box-shadow: 0 0 15px black;
 }
